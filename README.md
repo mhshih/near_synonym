@@ -1,7 +1,9 @@
 # CoNLL-U Reader
 
-* Python 2.7
-* Django 1.10
+Python 2.7
+
+Django 1.10
+
 
 - git clone http://github.com/mhshih/conllu
 - python2 makemigrations conllu

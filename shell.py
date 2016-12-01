@@ -35,6 +35,11 @@ for line in open('zh-ud-train.conllu'):
 
 for governor,rds in grds.items():
     print(governor)
-    obj=sorted(rds.items(),key=lambda ds:sum([len(ds[1][d]) for d in ds[1]]),reverse=True)
-    rds=OrderedDict(rds)
-    GRDS(governor=governor,rds=dumps(OrderedDict(obj),ensure_ascii=False)).save()
+    rds=sorted(rds.items(),key=lambda ds:sum([len(ds[1][d]) for d in ds[1]]),reverse=True)
+    GRDS(governor=governor,rds=dumps(OrderedDict(rds),ensure_ascii=False)).save()
+
+
+
+
+
+

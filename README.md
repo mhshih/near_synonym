@@ -4,9 +4,8 @@ Python 2.7
 
 Django 1.10
 
-
-- git clone http://github.com/mhshih/conllu
-- python2 makemigrations conllu
+- git clone http://github.com/mhshih/near_synonym
+- python2 makemigrations near_synonym
 - python2 migrate
 - python2 manage.py shell
 - import shell
